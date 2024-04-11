@@ -1,0 +1,61 @@
+query GetPosts {
+  getPosts {
+    id
+    title
+    content
+  }
+}
+
+query GetPost {
+  getPost(id: "a0a0a0a0-a0a0-a0a0-a0a0-a0a0a0a0a0a0") {
+    id
+    title
+    content
+  }
+}
+
+query GetTags {
+  getTags {
+    id
+    name
+  }
+}
+
+query getPostByTags {
+  getPostByTags(tags: ["a0a0a0a0-a0a0-a0a0-a0a0-a0a0a0a0a0a0"]) {
+    id
+    title
+    content
+  }
+}
+
+mutation CreatePost {
+  createPost(newPost: { title: "Test Title", content: "Test Content" }) {
+    id
+    title
+    content
+  }
+}
+
+mutation DeletePost {
+  deletePost(id: "a0a0a0a0-a0a0-a0a0-a0a0-a0a0a0a0a0a0") {
+    id
+    title
+    content
+  }
+}
+
+mutation UpdatePost {
+  updatePost(id: "a0a0a0a0-a0a0-a0a0-a0a0-a0a0a0a0a0a0", updatedPost: { title: "Updated Title", content: "Updated Content" }) {
+    id
+    title
+    content
+  }
+}
+
+mutation createTag {
+  createTag(newTag: { name: "Test Tag" }) {
+    id
+    name
+  }
+}
