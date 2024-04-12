@@ -18,7 +18,7 @@ export const schema = `
   input PostCreate {
     title: String!
     content: String!
-    tagIds: [ID!]!
+    tagId: [ID!]!
   }
 
   type Query {

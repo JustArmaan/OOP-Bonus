@@ -30,7 +30,7 @@ query getPostByTags {
 }
 
 mutation CreatePost {
-  createPost(newPost: { title: "Test Title", content: "Test Content" }) {
+  createPost(newPost: { title: "Test Title", content: "Test Content", tagId: "tagId" }) {
     id
     title
     content
